@@ -1,1 +1,70 @@
-<p>home works!</p>
+<div class="container mt-5" *ngFor="let job of jobs">
+    <div class="card">
+        <div class="card-body">
+        <div class=" header row w-100 justify-content-center align-items-center">
+            <div class="col-6">
+                <h1>Web Developer</h1>
+                <h5>Eastern Illinois University</h5>
+                <p>Chareston LA</p>
+            </div>
+            <div class="col-6 justify-content-end d-flex">
+                <img height="100px" src="https://jobs.github.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmVMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2c9ed603957ccec636b24a8daaf6f07ad1424af8/EIU%20Square%202%20Color.png" alt="">
+            </div>
+            </div>
+
+            <div class="row mt-2">
+                
+                <div class="col-4">
+                                    <h3>Type</h3>
+                                    <p>Full Stack Developer</p>
+                </div>
+                                    <div class="col-4">
+                                        <h3>Location</h3>
+                                        <p>Full Stack Developer</p>
+                                    </div>
+                <div class="col-4">
+                                                        <h3>Posting on</h3>
+                                                        <p>Full Stack Developer</p>
+                                                    </div>
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-6">
+                    <button  class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">More Details</button>
+                </div>
+                <div class="col-6 justify-content-end d-flex">
+                    <button class="btn btn-primary primary-btn">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                The GitHub Jobs API allows you to search, and view jobs with JSON over HTTP.
+                
+                To get the JSON representation of any search result or job listing, append .json to the URL you'd use on the HTML GitHub
+                Jobs site.
+                
+                For example, when searching for Python jobs near New York on the site I am taken to this url:
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
