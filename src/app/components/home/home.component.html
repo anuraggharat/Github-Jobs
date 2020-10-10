@@ -3,8 +3,8 @@
         <div class="card-body">
         <div class=" header row w-100 justify-content-center align-items-center">
             <div class="col-6">
-                <h1>Web Developer</h1>
-                <h5>Eastern Illinois University</h5>
+                <h1>{{job.title}}</h1>
+                <h5>{{job.company}}</h5>
                 <p>Chareston LA</p>
             </div>
             <div class="col-6 justify-content-end d-flex">
@@ -16,15 +16,15 @@
                 
                 <div class="col-4">
                                     <h3>Type</h3>
-                                    <p>Full Stack Developer</p>
+                                    <p>{{job.type}}</p>
                 </div>
                                     <div class="col-4">
                                         <h3>Location</h3>
-                                        <p>Full Stack Developer</p>
+                                        <p>{{job.location}}</p>
                                     </div>
                 <div class="col-4">
                                                         <h3>Posting on</h3>
-                                                        <p>Full Stack Developer</p>
+                                                        <p>{{job.created_at}}</p>
                                                     </div>
             </div>
 
@@ -52,12 +52,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                The GitHub Jobs API allows you to search, and view jobs with JSON over HTTP.
-                
-                To get the JSON representation of any search result or job listing, append .json to the URL you'd use on the HTML GitHub
-                Jobs site.
-                
-                For example, when searching for Python jobs near New York on the site I am taken to this url:
+                <div [innerHTML]="job.description"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
